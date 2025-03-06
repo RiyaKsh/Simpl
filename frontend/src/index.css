@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@keyframes wave {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes wave-slower {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+  @keyframes wave-fast {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  .animate-wave { animation: wave 6s ease-in-out infinite; }
+  .animate-wave-slower { animation: wave-slower 10s ease-in-out infinite; }
+  .animate-wave-fast { animation: wave-fast 4s ease-in-out infinite; }
